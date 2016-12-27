@@ -18,6 +18,11 @@ Recent languages like Low\*, &c. are also within my wheelhouse.
 
 # Ideas
 
+Below are some rough rules that make up the coding style I've been trying to adhere to. Eventually,
+it would be nice to compare the below to the C standard, and clean up any "undefined behaviour" (UB),
+and start to formalize the ideas a bit, such that compiling from higher-level languages to LojiC will
+be well understood. This would include tooling, and model extraction from those HLLs.
+
 ## Semantics
 
 - assignments are statements (and thus return a "meaningless" value)
@@ -56,3 +61,4 @@ Recent languages like Low\*, &c. are also within my wheelhouse.
 - variables should be declared at the top of their scope wherever possible
 - always indent blocks, including switch statements
 - return early on failure
+- prefer customized headers to `#ifdef` blocks, and APIs abstract enough to support that
