@@ -62,3 +62,7 @@ be well understood. This would include tooling, and model extraction from those 
 - always indent blocks, including switch statements
 - return early on failure
 - prefer customized headers to `#ifdef` blocks, and APIs abstract enough to support that
+
+# Related
+
+- look into these [clang analyzers](https://github.com/sinelaw/elfs-clang-plugins/)
